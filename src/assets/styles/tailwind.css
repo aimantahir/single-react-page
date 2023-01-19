@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply text-[#353535]
+}
+
+.footer-links{
+    @apply mt-[40px]
+}
+
+.footer-links li{
+    @apply py-[5px] relative
+}
+
+.footer-links li::after{
+    @apply absolute right-0 bottom-0 bg-[#000] content-[''] h-[1px] w-[100%] max-w-[345px]
+}
+
+.footer-links li a{
+    @apply text-[36px] md:text-[42px] font-frank leading-[54px]
+}
